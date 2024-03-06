@@ -1,0 +1,141 @@
+libraries installed for front end 
+first created the app
+reactstarp
+npm install react-router-dom@6
+
+for auto complete 
+
+"emmet.triggerExpansionOnTab": true,
+"emmet.includeLanguages": {
+  "javascript": "javascriptreact"
+}
+
+Base component is common for all which contains header and footer4
+
+if problem comes add abouve auto complete in settings.json
+
+used nav bar from reactstarp
+
+added navitems in nav bar code along with their links and reactlink is used to avoid reloading
+
+created services 
+
+isOpen state created 
+
+card and form componets are used from reactstrap
+
+form is used inside card 
+card is box
+
+layout component used from reactstrap
+
+used states for sign up fields for storing data
+two way binding achieved by using state 
+
+
+axios library install 
+npm install axios
+
+react toastify installed for best view messages 
+
+npm install react-toastify
+
+valid input is applied for every field in register form
+
+token that we get after login is stored in local storage that is storage of browser
+
+
+auth folder is created and in that index.js file is created 
+
+
+in backend @jsonignore is done so as to avoid that field to be sent in the response to the client
+
+<outlet/> tag is used to show the nested elements inside the main element 
+
+
+later on add navlink to youtube insta and all routes 
+
+profileinfo and userdashboard is created 
+
+In backend as we have used jsonignore both set and get pass were getting done but we just want to ignore get password thats why we have set setter and gave @jsonpeoperty annotation
+
+addpost.jsx created to create a new post
+
+category-service.js is created so that we can write a functinal comp in that to get all the categories and display it on the client side
+
+
+if categories doesnt appear on front end change routing in backend refer front end v no 16
+
+categories usestate is used to save the categories coming from backend 
+
+dyanamically added categories to client side 
+
+
+jodit react rich text editor added to code
+npm install jodit-react
+ const editor = useRef(null)
+it gives all the functionalities like word blod ,italic,bullets etc
+
+
+private axios is used to store privare apis urls 
+
+NewFeed.jsx is created 
+new feed section is public 
+
+post component is created which is responsible to display a single post
+
+
+postpage.jsx is created for storing the content of every post
+useParams hook is used to fetch the props passed 
+dangerouslyinnerhtml is used to print content 
+
+pagination is done in desc order so that last post done will bebdisplayed first of all
+
+if any error occurs in posting comment change conent to content in postpage.jsx
+
+
+infinite scroll implemented 
+library added is 
+  npm install --save react-infinite-scroll-component
+
+In newfeed commented section is for pagination
+
+changepageContent function is created which will load next page in infinite scroll
+
+
+   const [currentPage, setCurrentPage] = useState(0) 
+is used to maintain the current page number 
+
+
+context api used 
+global state(global store ) is created and all data is stored so that all components can use that data without the need to pass it through props
+props drilling is not needed 
+steps in context api:
+1.create context for any props
+2.create provider of it and pass children to it 
+3.The class we will be consuming the provider data wrapp that class in consumer tag
+
+provider will contain all data and by using consumer we can use that data 
+
+usercontext.js
+userprovider.jsx
+
+created 
+
+const object = useContext(userContext)
+another way to consume data in provider ,context api
+
+
+CategorySideMenun.jsx is created to show all categories and that user can select any one category 
+
+
+
+categories.jsx page is created to display all the posts in a particular category when user clicks on the particular category link
+	
+
+update and delete button will be appear only on those posts which are made by a particular logged in user
+
+
+UpdateBlog.jsx page is created so that when user clicks the update button he should get this page so that he can he can update the post made by him
+
+same jsx of addpost is copied into update post
